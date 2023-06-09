@@ -17,8 +17,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_09_062404) do
   create_table "data", force: :cascade do |t|
     t.string "imgUrl"
     t.integer "vote"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

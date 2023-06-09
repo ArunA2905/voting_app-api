@@ -3,8 +3,6 @@ class CreateData < ActiveRecord::Migration[7.0]
     create_table :data do |t|
       t.string :imgUrl
       t.integer :vote
-
-      t.timestamps
     end
   end
 end
