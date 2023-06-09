@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_09_062404) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_09_114347) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "data", force: :cascade do |t|
     t.string "imgUrl"
     t.integer "vote"
+  end
+
+  create_table "user_stats", force: :cascade do |t|
+    t.integer "userId"
+    t.boolean "voteStatus"
+    t.integer "lastVote"
   end
 
 end
