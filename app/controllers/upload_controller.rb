@@ -7,7 +7,7 @@ class UploadController < ApplicationController
   end
 
   def create
-    pry-byebug
+    #pry-byebug
     @upload = Upload.new(file_data: upload_params)
     if @upload.save
       render json: { message: 'File uploaded successfully' }, status: :ok
